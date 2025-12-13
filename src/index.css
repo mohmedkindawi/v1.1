@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-teal: #5BBFB5;
+  --color-brand-navy: #1A1B37;
+  --color-brand-cream: #FFF6E9;
+  --color-auth-brown: #8B5E34;
+  --color-auth-gold: #D4AF37;
+}
+
+/* Site-wide background */
+.app-bg {
+  background-color: #f8fafc;
+}
+
+.bg-overlay {
+  background-color: #ffffff;
+  transition: background-color 200ms ease;
+}
+
+.dark .bg-overlay {
+  background-color: #1a1b37;
+}
+
+body {
+  @apply antialiased bg-white text-brand-navy;
+  font-family: 'Cairo', sans-serif;
+}
+
+.auth-gradient {
+  background: radial-gradient(circle at top, var(--color-auth-gold) 0%, transparent 70%);
+}
+
+.auth-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200 
+         focus:border-auth-brown focus:ring-1 focus:ring-auth-brown 
+         outline-none transition-colors text-gray-800;
+}
+
+.auth-label {
+  @apply block text-lg font-medium text-auth-brown mb-2;
+}
+
+.auth-button {
+  @apply w-full py-3 rounded-full font-medium transition-colors
+         focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.auth-button-primary {
+  @apply bg-auth-brown text-white hover:bg-opacity-90
+         focus:ring-auth-brown;
+}
+
+.auth-button-outline {
+  @apply border-2 border-auth-brown text-auth-brown
+         hover:bg-auth-brown hover:text-white;
+}

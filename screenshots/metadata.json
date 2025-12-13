@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Sign In",
+    "route": "/signin",
+    "description": "User authentication screen for signing into the application",
+    "requiresAuth": false,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\sign_in.png"
+  },
+  {
+    "name": "Sign Up",
+    "route": "/signup",
+    "description": "User registration screen for creating new accounts",
+    "requiresAuth": false,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\sign_up.png"
+  },
+  {
+    "name": "Forgot Password",
+    "route": "/forgot-password",
+    "description": "Password recovery screen for resetting user passwords",
+    "requiresAuth": false,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\forgot_password.png"
+  },
+  {
+    "name": "Dashboard",
+    "route": "/dashboard",
+    "description": "Main dashboard showing project overview and quick actions",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\dashboard.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "My Projects",
+    "route": "/projects",
+    "description": "List view of all user projects with filtering and management options",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\my_projects.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "Project Information",
+    "route": "/project/new",
+    "description": "Form for creating new projects with basic information fields",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\project_information.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "Project Actions",
+    "route": "/project/actions",
+    "description": "Project management actions including edit, delete, and navigation",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\project_actions.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "Excavation Screen",
+    "route": "/project/excavation",
+    "description": "Excavation quality control form with measurements and documentation",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\excavation_screen.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "Basics Screen",
+    "route": "/project/basics",
+    "description": "Basic project setup and configuration screen",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\basics_screen.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "White Concrete Screen",
+    "route": "/project/basics/white-concrete",
+    "description": "White concrete quality control and monitoring screen",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\white_concrete_screen.png",
+    "note": "This screen requires user authentication to access."
+  },
+  {
+    "name": "Home Screen",
+    "route": "/home",
+    "description": "Home screen with project summary and recent activities",
+    "requiresAuth": true,
+    "screenshotPath": "c:\\TOMAS\\prograimming with chat.mistral.aichat\\app code backup\\v3\\project\\screenshots\\home_screen.png",
+    "note": "This screen requires user authentication to access."
+  }
+]

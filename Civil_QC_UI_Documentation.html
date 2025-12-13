@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil QC Application - UI Documentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .toc {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .toc h2 {
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 8px 0;
+        }
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .screen-section {
+            background: white;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .screen-header {
+            background: #667eea;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .screen-content {
+            padding: 20px;
+        }
+        .screenshot {
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .description {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+        .functionality-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .functionality-item {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2196f3;
+        }
+        .interaction-list, .tips-list {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .interaction-list ul, .tips-list ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .navigation-info {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 4px solid #4caf50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 8px;
+        }
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        @media print {
+            body { background: white; }
+            .screen-section { page-break-inside: avoid; }
+            .screenshot img { max-height: 400px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Civil QC Application</h1>
+        <h2>UI Documentation Guide</h2>
+        <p>Comprehensive guide to application screens, functionalities, and user interactions</p>
+        <p><strong>Generated:</strong> 11/3/2025, 6:56:33 PM</p>
+    </div>
+
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#screen-0">Sign In</a></li><li><a href="#screen-1">Sign Up</a></li><li><a href="#screen-2">Forgot Password</a></li><li><a href="#screen-3">Dashboard</a></li><li><a href="#screen-4">My Projects</a></li><li><a href="#screen-5">Project Information</a></li><li><a href="#screen-6">Project Actions</a></li><li><a href="#screen-7">Excavation Screen</a></li><li><a href="#screen-8">Basics Screen</a></li><li><a href="#screen-9">White Concrete Screen</a></li><li><a href="#screen-10">Home Screen</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="screen-section" id="screen-0">
+        <div class="screen-header">
+            Sign In
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> The Sign In screen provides secure user authentication for accessing the Civil QC Application. It features email and password fields with real-time validation and error handling.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/sign_in.png" alt="Sign In Screenshot" />
+                
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessible from the root URL when not authenticated. Redirects to dashboard upon successful login.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Email and password authentication</div>
+                
+                    <div class="functionality-item">Form validation with error messages</div>
+                
+                    <div class="functionality-item">Remember me functionality</div>
+                
+                    <div class="functionality-item">Forgot password link</div>
+                
+                    <div class="functionality-item">Responsive design for all devices</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Click "Sign In" button to authenticate</li><li>Click "Forgot Password?" to reset password</li><li>Click "Sign Up" to create new account</li><li>Form validates input in real-time</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Use a strong, unique password</li><li>Check "Remember me" for persistent sessions</li><li>Contact support if login issues persist</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-1">
+        <div class="screen-header">
+            Sign Up
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> The Sign Up screen allows new users to register for the Civil QC Application with email verification and account creation.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/sign_up.png" alt="Sign Up Screenshot" />
+                
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessible from sign-in screen or direct URL. Redirects to email verification after registration.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">New user registration</div>
+                
+                    <div class="functionality-item">Email verification process</div>
+                
+                    <div class="functionality-item">Password strength validation</div>
+                
+                    <div class="functionality-item">Terms and conditions acceptance</div>
+                
+                    <div class="functionality-item">Account activation workflow</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Fill in all required fields</li><li>Accept terms and conditions</li><li>Click "Sign Up" to create account</li><li>Check email for verification link</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Use a valid email address for verification</li><li>Create a strong password (8+ characters)</li><li>Read terms and conditions carefully</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-2">
+        <div class="screen-header">
+            Forgot Password
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Password recovery screen that sends reset instructions to the user's registered email address.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/forgot_password.png" alt="Forgot Password Screenshot" />
+                
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessible from sign-in screen. Returns to sign-in after email submission.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Password reset email sending</div>
+                
+                    <div class="functionality-item">Email validation</div>
+                
+                    <div class="functionality-item">Security token generation</div>
+                
+                    <div class="functionality-item">Reset link expiration handling</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Enter registered email address</li><li>Click "Reset Password" button</li><li>Check email for reset instructions</li><li>Follow reset link in email</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Use the email address associated with your account</li><li>Check spam folder if email doesn't arrive</li><li>Reset links expire after 24 hours</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-3">
+        <div class="screen-header">
+            Dashboard
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Main dashboard providing quick access to core application features and project overview.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/dashboard.png" alt="Dashboard Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Default authenticated landing page. Cards link to respective sections.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Project creation and management</div>
+                
+                    <div class="functionality-item">Quick action cards</div>
+                
+                    <div class="functionality-item">User profile display</div>
+                
+                    <div class="functionality-item">Theme and language switching</div>
+                
+                    <div class="functionality-item">Logout functionality</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Click "Create New Project" to start project setup</li><li>Click "My Projects" to view project list</li><li>Use theme toggle for dark/light mode</li><li>Select language from dropdown</li><li>Click logout to sign out</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Use dashboard cards for quick navigation</li><li>Switch themes based on lighting conditions</li><li>Language settings persist across sessions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-4">
+        <div class="screen-header">
+            My Projects
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Comprehensive project listing with filtering, sorting, and management capabilities.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/my_projects.png" alt="My Projects Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessible from dashboard. Individual projects link to detail views.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Project listing with pagination</div>
+                
+                    <div class="functionality-item">Search and filter functionality</div>
+                
+                    <div class="functionality-item">Project status indicators</div>
+                
+                    <div class="functionality-item">Bulk operations support</div>
+                
+                    <div class="functionality-item">Export capabilities</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Use search bar to find projects</li><li>Apply filters by status or date</li><li>Click project cards for details</li><li>Use action menus for project operations</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Use filters to quickly find specific projects</li><li>Project status colors indicate completion level</li><li>Regularly review project statuses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-5">
+        <div class="screen-header">
+            Project Information
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Project creation and information management screen with comprehensive form fields.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/project_information.png" alt="Project Information Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessed when creating new projects. Part of multi-step project setup.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Project basic information entry</div>
+                
+                    <div class="functionality-item">Form validation and saving</div>
+                
+                    <div class="functionality-item">Auto-save functionality</div>
+                
+                    <div class="functionality-item">Progress tracking</div>
+                
+                    <div class="functionality-item">Data persistence</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Fill in project details</li><li>Navigate between form sections</li><li>Save progress at any time</li><li>Continue to next setup steps</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Complete all required fields for full functionality</li><li>Use descriptive project names</li><li>Save frequently to avoid data loss</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-6">
+        <div class="screen-header">
+            Project Actions
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Project management interface providing access to all project-related operations.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/project_actions.png" alt="Project Actions Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Central hub for project operations. Links to excavation, basics, and other modules.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Project editing and deletion</div>
+                
+                    <div class="functionality-item">Navigation to project modules</div>
+                
+                    <div class="functionality-item">Status updates</div>
+                
+                    <div class="functionality-item">Project sharing options</div>
+                
+                    <div class="functionality-item">Activity logging</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Select actions from menu</li><li>Navigate to specific project screens</li><li>Update project information</li><li>Manage project permissions</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Review all options before making changes</li><li>Use breadcrumbs for navigation context</li><li>Changes are saved automatically</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-7">
+        <div class="screen-header">
+            Excavation Screen
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Specialized screen for excavation quality control with measurement tracking and documentation.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/excavation_screen.png" alt="Excavation Screen Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessed from project actions. Part of quality control workflow.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Excavation depth measurements</div>
+                
+                    <div class="functionality-item">Soil type classification</div>
+                
+                    <div class="functionality-item">Compaction test results</div>
+                
+                    <div class="functionality-item">Photo documentation upload</div>
+                
+                    <div class="functionality-item">Real-time validation</div>
+                
+                    <div class="functionality-item">Quality checkpoints</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Enter measurement data</li><li>Select soil classifications</li><li>Upload supporting photos</li><li>Complete quality checkpoints</li><li>Save and validate entries</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Take clear, well-lit photos</li><li>Double-check measurements before saving</li><li>Complete all required checkpoints</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-8">
+        <div class="screen-header">
+            Basics Screen
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Fundamental project setup screen for basic configuration and initial parameters.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/basics_screen.png" alt="Basics Screen Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Early step in project creation. Leads to specialized screens.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Basic project configuration</div>
+                
+                    <div class="functionality-item">Initial parameter setup</div>
+                
+                    <div class="functionality-item">Foundation settings</div>
+                
+                    <div class="functionality-item">Standard compliance checks</div>
+                
+                    <div class="functionality-item">Setup validation</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Configure basic project settings</li><li>Set initial parameters</li><li>Validate setup requirements</li><li>Proceed to detailed configurations</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Review all settings carefully</li><li>Ensure compliance with standards</li><li>Save progress before leaving</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-9">
+        <div class="screen-header">
+            White Concrete Screen
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Specialized quality control screen for white concrete mixing and curing processes.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/white_concrete_screen.png" alt="White Concrete Screen Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Accessed from basics screen. Specialized concrete quality control.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Concrete mix specifications</div>
+                
+                    <div class="functionality-item">Strength testing results</div>
+                
+                    <div class="functionality-item">Temperature monitoring</div>
+                
+                    <div class="functionality-item">Curing conditions tracking</div>
+                
+                    <div class="functionality-item">Quality checkpoints</div>
+                
+                    <div class="functionality-item">Documentation requirements</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Enter mix specifications</li><li>Record test results</li><li>Monitor temperature readings</li><li>Document curing conditions</li><li>Complete quality assessments</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Monitor temperature continuously</li><li>Record all test results accurately</li><li>Follow curing protocols strictly</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+    <div class="screen-section" id="screen-10">
+        <div class="screen-header">
+            Home Screen
+        </div>
+        <div class="screen-content">
+            <div class="description">
+                <strong>Description:</strong> Project home screen showing summary information and recent activities.
+            </div>
+
+            <div class="screenshot">
+                <img src="screenshots/home_screen.png" alt="Home Screen Screenshot" />
+                <p style="color: #666; font-style: italic; margin-top: 10px;">Note: This screen requires user authentication to access.</p>
+            </div>
+
+            <h3>Navigation</h3>
+            <div class="navigation-info">
+                Project-specific home page. Provides overview and quick actions.
+            </div>
+
+            <h3>Key Functionalities</h3>
+            <div class="functionality-grid">
+                
+                    <div class="functionality-item">Project summary display</div>
+                
+                    <div class="functionality-item">Recent activity feed</div>
+                
+                    <div class="functionality-item">Quick access links</div>
+                
+                    <div class="functionality-item">Status overview</div>
+                
+                    <div class="functionality-item">Navigation shortcuts</div>
+                
+            </div>
+
+            <h3>User Interactions</h3>
+            <div class="interaction-list">
+                <ul>
+                    <li>Review project summary</li><li>Access recent activities</li><li>Use quick navigation links</li><li>Monitor project status</li>
+                </ul>
+            </div>
+
+            <h3>Usability Tips</h3>
+            <div class="tips-list">
+                <ul>
+                    <li>Check activity feed regularly</li><li>Use shortcuts for frequent tasks</li><li>Monitor status indicators</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="footer">
+        <p>&copy; 2025 Civil QC Application - UI Documentation</p>
+        <p>For technical support, contact: support@civilqc.com</p>
+    </div>
+</body>
+</html>

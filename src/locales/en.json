@@ -1,0 +1,55 @@
+{
+  "home": {
+    "title": "Home",
+    "welcome": "Welcome, {{user}}"
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "viewProjects": "View Projects"
+  }
+  ,
+  "header": {
+    "signOut": "Sign Out"
+  },
+  "cards": {
+    "create": {
+      "title": "Create New Project",
+      "desc": "Start a new construction project and set up initial details",
+      "cta": "Get Started →"
+    },
+    "projects": {
+      "title": "My Projects",
+      "desc": "View and manage your existing construction projects",
+      "cta": "View Projects →"
+    }
+  },
+  "projectActions": {
+    "title": "Project Actions",
+    "menu": {
+      "basics": {
+        "title": "The Basics",
+        "description": "Project information and initial setup"
+      },
+      "mayorWalls": {
+        "title": "Mayor and Walls",
+        "description": "Structural elements and wall systems"
+      },
+      "tests": {
+        "title": "Tests",
+        "description": "Quality assurance and testing protocols"
+      },
+      "excavation": {
+        "title": "Excavation",
+        "description": "Earthwork and site preparation"
+      },
+      "ceilings": {
+        "title": "Ceilings & Concrete",
+        "description": "Overhead structures and concrete work"
+      },
+      "reports": {
+        "title": "Reports",
+        "description": "Documentation and progress tracking"
+      }
+    }
+  }
+}
